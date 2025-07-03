@@ -1,0 +1,5 @@
+redis_host: "blongd"
+redis_port: 6379
+input_key: "{TESTDEVICE}:REDPAT::DMA"
+function_name: intensity
+output_key: "{TESTDEVICE}:REDPAT::DMA:PROCESSED_DATA"

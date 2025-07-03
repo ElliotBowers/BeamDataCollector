@@ -1,0 +1,6 @@
+redis
+numpy
+scipy
+matplotlib
+pyyaml
+pandas
