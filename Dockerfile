@@ -13,13 +13,13 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # Copy your pydapter project
-COPY pydapter-wraptor /app/pydapter-wraptor
+# COPY pydapter-wraptor /app/pydapter-wraptor
 
 # Install Python dependencies for building (after system pybind11 is installed)
 RUN pip install --upgrade pip setuptools wheel
 
 # This line will now work since pybind11 headers are available
-RUN pip install /app/pydapter-wraptor
+# RUN pip install /app/pydapter-wraptor
 
 # Copy rest of your app
 COPY BeamDataCollector.py .
